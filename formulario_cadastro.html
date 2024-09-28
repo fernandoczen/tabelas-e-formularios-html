@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+    <form action="/submit-form" method="POST">
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome">
+        <label for="email">Insira seu e-mail:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade"
+        min="14" max="130">
+        <label for="datadenascimento">Data de Nascimento:</label>
+        <input type="date" id="datadenascimento" name="datadenascimento"><br><br>
+        
+        <label>Selecione seu gênero:</label><br>
+        <input type="radio" value="masc" name="Masculino"> Masculino<br>
+        <input type="radio" value="fem" name="Feminino"> Feminino<br>
+        <input type="radio" value="outro" name="Outro"> Outro<br><br>
+
+        <label for="cidade">Selecione sua cidade:</label>
+        <select id="cidade" name="cidade">
+            <option value="SP">São Paulo</option><br>
+            <option value="RJ">Rio de Janeiro</option><br>
+            <option value="MCZ">Maceió</option><br>
+        </select><br><br>
+
+        <label for="senha">Registre sua senha:</label>
+        <input type="password" id="senha" name="senha"
+        minlength="8"><br><br>
+
+        <label for="produtos">Selecione a quantidade de produtos:</label>
+        <input type="number" id="produtos" name="produtos"><br><br>
+
+        <label>Observações Adicionais:</label><br>
+        <textarea name="adicionais" cols="30" rows="10"></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Redefinir</button>
+    </form>
+</body>
+</html>
